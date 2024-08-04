@@ -5,6 +5,21 @@ import { Box, Modal, Stack, TextField, Typography, Button, Pagination, Snackbar,
 import { firestore } from "@/firebase";
 import { collection, deleteDoc, doc, getDocs, query, setDoc, getDoc } from "firebase/firestore";
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'white',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 3,
+}
+
 
 export default function Home() {
   const [inventory, setInventory] = useState([]);
