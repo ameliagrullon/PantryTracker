@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Box, Modal, Stack, TextField, Typography, Button, Pagination, Snackbar, Alert, CircularProgress } from "@mui/material";
 import { firestore } from "@/firebase";
 import { collection, deleteDoc, doc, getDocs, query, setDoc, getDoc } from "firebase/firestore";
+import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
 
 const style = {
   position: 'absolute',
