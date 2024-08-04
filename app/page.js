@@ -1,7 +1,8 @@
 'use client';
+import Image from "next/image";
 import { useState, useEffect } from "react";
-import { firestore } from "@/firebase";
 import { Box, Modal, Stack, TextField, Typography, Button, Pagination, Snackbar, Alert, CircularProgress } from "@mui/material";
+import { firestore } from "@/firebase";
 import { collection, deleteDoc, doc, getDocs, query, setDoc, getDoc } from "firebase/firestore";
 
 
